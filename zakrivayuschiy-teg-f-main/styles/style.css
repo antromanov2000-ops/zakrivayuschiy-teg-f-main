@@ -9,15 +9,6 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
-@keyframes sparks{
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
-}
-
 .page {
   display: grid;
   justify-content: center;
@@ -269,69 +260,6 @@ body {
   outline: 0;
 }
 
-.like-icon:hover .main-body {
-  fill: var(--contour-color);
-  transition: fill linear 0.3s 0.05s;
-}
-
-.like-icon:hover .core {
-  fill: var(--contour-color);
-  transition: fill linear 0.3s 0s;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--fill-color);
-  transition: fill linear 0.3s 0.05s;
-}
-
-.like-icon.is-liked .core {
-  fill: var(--fill-color);
-  transition: fill linear 0.3s 0s;
-}
-
-.like-icon:active .main-body {
-  fill: var(--fill-color);
-  transition: fill linear 0.3s 0.05s;
-}
-
-.like-icon:active .core {
-  fill: var(--fill-color);
-  transition: fill linear 0.3s 0s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--fill-color);
-  transition: fill linear 0.3s 0.06s;
-}
-
-.like-icon:active .contour {
-  fill: var(--contour-color);
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3s;
-}
-
-.like-icon:hover.is-liked .core{
-  fill: var(--fill-color);
-}
-
-.contour {
-  transition: fill linear 0.1s;
-}
-
-.sparks {
-  opacity: 0;
-}
-
-.core {
-  transition: fill linear 0.3s 0.03s;
-}
-
-.main-body {
-  transition: fill linear 0.3s;
-}
-
 .dialog_window__text {
   font-family: var(--font-accent);
   font-size: 14px;
@@ -354,8 +282,12 @@ body {
   }
 
   .header {
-    margin-bottom: 100px;
-    padding-bottom: 120px;
+    /*margin-bottom: 100px;
+    padding-bottom: 120px;*/
+
+    margin-bottom: 90px;
+    padding-top: 122px;
+    padding-bottom: 125px;
   }
 
   .card-text {
